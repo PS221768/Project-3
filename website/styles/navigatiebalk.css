@@ -1,0 +1,35 @@
+/* navbar = de hele navigatie balk : navitem = de link onderdelen erin */
+.nav-bar{
+    display: flex;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    width: 50vw;
+    padding: 10px;
+    background-color: crimson;
+    border: 2px;
+    border-color: black;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    color: white;
+    display: block;
+    padding: 8px;
+    background-color: crimson;
+    border: 1px;
+    border-color: black;
+}
+
+li a:hover{
+    background-color: red;
+}
