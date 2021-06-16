@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="nl">
+<?php
+include 'navigatiebalk.php';
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +11,7 @@
     <link rel="stylesheet" href="css/Verkiezingen.css" />
 
 </head>
-<?php
-include 'navigatiebalk.php';
-?>
+
 <body>
     <h2>Doel van de website en de verkiezingen:</h2>
     <div class="Home">

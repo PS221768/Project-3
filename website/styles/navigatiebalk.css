@@ -1,10 +1,9 @@
 /* navbar = de hele navigatie balk : navitem = de link onderdelen erin */
 .nav-bar{
     display: flex;
-    margin-left: 25vw;
-    margin-right: 25vw;
-    width: 50vw;
+    width: 100vw;
     padding: 10px;
+    margin: -8px;
     background-color: crimson;
     border: 2px;
     border-color: black;

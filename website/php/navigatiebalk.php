@@ -6,9 +6,9 @@
     <body>
         <div class="nav-bar">
             <ul>
-                <li><a href="navigatiebalk.html">Pagina naam</a></li>
-                <li><a href="navigatiebalk.html">Pagina naam</a></li>
-                <li><a href="navigatiebalk.html">Pagina naam</a></li>
+                <li><a href="Index.php">Pagina naam</a></li>
+                <li><a href="Index.php">Pagina naam</a></li>
+                <li><a href="Index.php">Pagina naam</a></li>
             </ul>
           </div>
     </body>
