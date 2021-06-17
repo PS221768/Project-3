@@ -7,7 +7,7 @@
         <div class="nav-bar">
             <ul>
                 <li><a href="Index.php">Pagina naam</a></li>
-                <li><a href="Index.php">Pagina naam</a></li>
+                <li><a href="deelnemende-partijen.php">Pagina naam</a></li>
                 <li><a href="Index.php">Pagina naam</a></li>
             </ul>
           </div>
