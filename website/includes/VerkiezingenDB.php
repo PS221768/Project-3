@@ -5,10 +5,27 @@ class verkiezingenDB
     const USER = "root";
     const PASSWD = "";
 
-    // SELECT * FROM server.server_player INNER JOIN server.player ON server_player.playerid=player.id WHERE serverid = " + verkiezing id + "; "
+    
+    function selectMenu (){
+        try {
+            $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
+            
+            $statement = $pdo->prepare("SELECT * FROM verkiezingenprj3.verkiezing;");
+
+            $statement->execute();
+
+            $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+            return $rows;
+
+        } catch (DPOException $ex) {
+            return false;
+        }
+    }
+
 
     function selectVerkiezing($verkiezingsoort){
-        $soortid = isset($verkiezingsoort) ? $verkiezingsoort : 1;
+        $soortid = $verkiezingsoort;
         try {
             $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
             

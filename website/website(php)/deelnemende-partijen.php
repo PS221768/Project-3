@@ -21,21 +21,23 @@ include 'navigatiebalk.php';
         <!-- hier komt php code om alle partijen op te halen en neer te zetten (meteen ook zorgen dat de contactgegevens erbij zitten) -->
 
         <form method='post' action='Deelnemende-partijen.php'>
+        <select name="verkiezing">
+                <?php
+                    $rows = $db->selectMenu();
+                        foreach ($rows as $row){
+                            echo "<option value=". $row["Verkiezingsoort"] .">". $row["Verkiezingsoort"] . ", deze verkiezing vind plaats op : " . $row["Datum"] ."</option>";
+                        }
 
+                ?>
+            <input type="submit" action="Deelnemende-partijen.php" value="check deze verkiezing">
         </form>
         <?php
-            $rows = $db->selectVerkiezing(1);
+            $rows = $db->selectVerkiezing(isset($_POST["verkiezing"]));
 
             foreach ($rows as $row) {
                 echo "<tr >   
-                <td>$row[PartijId]</td>
-                <td>$row[PartijName]</td>
-                <td>$row[Adres]</td>
-                <td>$row[Postcode]</td>
-                <td>$row[Gemeente]</td>
-                <td>$row[EmailAdres]</td>
-                <td>$row[Telefoonnummer]</td>
-              </tr>";
+                <td>$row[PartijName]</td> <a href=" . 'Deelnemende-partijen.php' . ">" . '[meer informatie over deze partij]' . "</a>
+                </tr>";
             }
         ?>
     </div>
